@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Css-2</title>
+  </head>
+
+  <style>
+    /* ---Selectors---- */
+    /* ---Types of Selectors--- */
+    /* 1. To select all (a. body, b. *  ) */
+    /* 2. Using Tags  */
+    /* 3. Using Class name- to use class name use (.) with class name */
+    /* 4. Using Id- to use Id use (#) with Id name */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 10px;
+    }
+
+    /* div {
+      background-color: red;
+      margin: 5px;
+      display: inline;
+    } */
+    span {
+      display: block;
+    }
+    a {
+      color: gray;
+    }
+    .main {
+      background-color: bisque;
+    }
+
+    .divs-1 {
+      background-color: aqua;
+      display: inline;
+    }
+
+    .divs {
+      background-color: red;
+      display: inline;
+    }
+    .divs-2 {
+      background-color: brown;
+      display: inline;
+      color: whitesmoke;
+    }
+    #span-id {
+      background-color: black;
+      color: aqua;
+    }
+  </style>
+  <body>
+    <span class="main">
+      <h2>This is H2 Tag</h2>
+      <span id="span-id">I 'm span tag</span>
+      <div class="divs-1">Div 1</div>
+      <div class="divs">Div 2</div>
+      <div class="divs-1">Div 3</div>
+      <div class="divs">without class div</div>
+
+      <p>
+        This is p tag used to write some paragraph. and it has display block
+        property
+      </p>
+      <span>This is span tag with display property inline</span>
+      <div class="divs">Div 4</div>
+      <a href="https://www.google.com">Click here</a>
+      <button>Sign Up</button>
+    </span>
+  </body>
+</html>
