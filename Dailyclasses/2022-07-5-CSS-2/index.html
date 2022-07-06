@@ -5,76 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Css-2</title>
   </head>
-
   <style>
-    /* ---Selectors---- */
-    /* ---Types of Selectors--- */
-    /* 1. To select all (a. body, b. *  ) */
-    /* 2. Using Tags  */
-    /* 3. Using Class name- to use class name use (.) with class name */
-    /* 4. Using Id- to use Id use (#) with Id name */
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
-      margin: 10px;
-    }
-
-    /* div {
-      background-color: red;
-      margin: 5px;
-      display: inline;
-    } */
-    span {
-      display: block;
-    }
-    a {
-      color: gray;
-    }
-    .main {
-      background-color: bisque;
-    }
-
-    .divs-1 {
+      margin: 0;
       background-color: aqua;
-      display: inline;
     }
-
-    .divs {
-      background-color: red;
-      display: inline;
+    .main-div {
+      width: 50%;
+      background-color: aquamarine;
+      margin: 25vh auto;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid green;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px #5c995c;
     }
-    .divs-2 {
-      background-color: brown;
-      display: inline;
-      color: whitesmoke;
+    .child-div1 {
+      width: 50%;
+      margin-right: 1%;
     }
-    #span-id {
-      background-color: black;
-      color: aqua;
+    .child-div2 {
+      width: 50%;
+    }
+    .image {
+      width: 120px;
+      height: 120px;
+      margin: 2% 0% 0% 19%;
+      border: 1px solid black;
+      border-radius: 75px;
+    }
+    .title {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .subtitle {
+      width: 45%;
+      margin: 0 auto;
+    }
+    .para {
+      font-size: 10px;
+      padding: 10px;
+      color: green;
+    }
+    .git {
+      width: 50px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      background-color: floralwhite;
+      border: 1px solid green;
+      border-radius: 10px;
+      color: green;
+    }
+    .anchor {
+      text-decoration: none;
+      color: brown;
+      font-size: 12px;
+      margin-left: 20%;
     }
   </style>
-  <body>
-    <span class="main">
-      <h2>This is H2 Tag</h2>
-      <span id="span-id">I 'm span tag</span>
-      <div class="divs-1">Div 1</div>
-      <div class="divs">Div 2</div>
-      <div class="divs-1">Div 3</div>
-      <div class="divs">without class div</div>
 
-      <p>
-        This is p tag used to write some paragraph. and it has display block
-        property
-      </p>
-      <span>This is span tag with display property inline</span>
-      <div class="divs">Div 4</div>
-      <a href="https://www.google.com">Click here</a>
-      <button>Sign Up</button>
-    </span>
+  <body>
+    <div class="main-div">
+      <div class="child-div1">
+        <img
+          src="https://m.media-amazon.com/images/I/61D3Kg-apuL._SL1500_.jpg"
+          alt="Hulk Smash"
+          class="image"
+        />
+        <h3 class="title">Hulk Smash!!</h3>
+        <h5 class="subtitle">Bruce Banner</h5>
+      </div>
+      <div class="child-div2">
+        <p class="para">
+          What is special about the Hulk? The Hulk's strength remains at the top
+          level of all super human beings on Earth and increases exponentially
+          as his anger grows. This strength grants him not only upper body
+          prowess, but also the ability to leap great distances and land without
+          harm to himself.
+          <br />
+          The Hulk used so much energy, Banner needed to eat almost immediately
+          after turning back to Bruce Banner. Most importantly, the Hulk doesn't
+          need sleep
+        </p>
+        <input type="button" value="Git" class="git" />
+        <a
+          href="https://www.linkedin.com/in/lets-code-vinay"
+          target="_blank"
+          class="anchor"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
   </body>
 </html>
