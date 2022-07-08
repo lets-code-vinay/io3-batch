@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML-4(Listing)</title>
+  </head>
+  <style>
+    dl {
+      background-color: aqua;
+      padding: 5px;
+    }
+
+    dt {
+      color: red;
+      display: inline;
+    }
+
+    dd {
+      color: yellowgreen;
+      display: inline;
+      margin: 0;
+    }
+
+    ol {
+      list-style: upper-alpha;
+    }
+
+    ul {
+      list-style: none;
+    }
+  </style>
+  <body>
+    <!-- Type of Listing: 3 types -->
+    <!-- 1. dl : Description List-->
+    <!-- 2. ol : Ordered List-->
+    <!-- 1. ul : Unordered List-->
+
+    <!-- ::::Description List:::: -->
+    <dl>
+      <dt>Pikachu</dt>
+      <dd>Pikachu is Electric type Pokemon</dd>
+      <br />
+
+      <dt>Treecho</dt>
+      <dd>Treecho is grass type Pokemon</dd>
+      <br />
+
+      <dt>Squirtel</dt>
+      <dd>Squiretel is Water type pokemon</dd>
+      <br />
+    </dl>
+
+    <!-- ::::Ordered List:::: -->
+    <ol>
+      <li>Pikachu</li>
+      <li>Togepy</li>
+      <li>Charmander</li>
+      <li>Blastoise</li>
+      <li>Onyx</li>
+    </ol>
+
+    <!-- ::::Unordered List:::: -->
+    <h6>List of my fav pokemons</h6>
+    <ul>
+      <li>Chalizard</li>
+      <li>Drgonaire</li>
+      <li>Hypno</li>
+      <li>Gengar</li>
+      <li>Laparas</li>
+    </ul>
+
+    <!-- ::::DropDowns or Select:::: -->
+    <h6>Here are the dropdown</h6>
+    <label for="pokemonTypes">Pokemon Types</label>
+    <select id="pokemonTypes">
+      <optgroup label="Electric">
+        <option value="Pikachu">Pikachu</option>
+        <option value="Elekid">Elekid</option>
+        <option value="Magnemite">Magnemite</option>
+      </optgroup>
+      <optgroup label="Grass">
+        <option value="Bulbasaur">Bulbasaur</option>
+        <option value="Treecho">Treecho</option>
+        <option value="Nazleaf">Nazleaf</option>
+      </optgroup>
+      <optgroup label="Fire">
+        <option value="Torchik">Torchik</option>
+        <option value="Telon Flame">Telon Flame</option>
+        <option value="Sindaqual">Sindaqual</option>
+      </optgroup>
+    </select>
+  </body>
+</html>
