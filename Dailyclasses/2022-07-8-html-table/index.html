@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML-4(Table)</title>
+  </head>
+  <style>
+    /* CSS comment */
+
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid red;
+      border-collapse: collapse;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <!-- this is comment -->
+    <div class="main-div">
+      <h1>This is Time Table</h1>
+      <table>
+        <tr>
+          <th colspan="6">Time Table</th>
+        </tr>
+        <!--Table body-->
+        <tbody>
+          <tr class="first-row">
+            <th rowspan="7">Hours</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+          </tr>
+
+          <tr class="second-row">
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Phy</td>
+            <td>S.st</td>
+            <td>Eng</td>
+          </tr>
+
+          <tr class="third-row">
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Free</td>
+            <td>S.St</td>
+            <td>Phy</td>
+          </tr>
+
+          <tr class="fourth-row">
+            <td colspan="5">Lunch</td>
+          </tr>
+
+          <tr class="Fifth-row">
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Punjabi</td>
+            <td colspan="2" rowspan="2">Projects</td>
+          </tr>
+
+          <tr class="sixth-row">
+            <td>Math</td>
+            <td>Sci</td>
+            <td>Hindi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
