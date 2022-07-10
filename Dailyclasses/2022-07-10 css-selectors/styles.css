@@ -1,0 +1,60 @@
+/* CSS Selectors */
+
+/* 1. Universal Selector */
+/* 2. Type Selector: example: body, div, a */
+/* 3. class Selector */
+/* 4. Group Selectors: p, .className, #idName, a */
+/* 5. Individually selectors with type, class and id */
+/* 6. Combinators */
+/*      6.1 descendant selector (space)
+        6.2 child selector (>)
+        6.3 adjacent sibling selector (+)
+        6.4 general sibling selector (~) */
+
+/* 1. Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Type Selector: example: body, div, a */
+body {
+  background-color: green;
+}
+
+/* 2. Type Selector: example: body, div, a */
+ol {
+  background-color: aqua;
+}
+/* 2. Type Selector: example: body, div, a */
+li {
+  background-color: yellow;
+  display: inline;
+}
+
+/* 3. class Selector */
+.list-3 {
+  background-color: red;
+  color: blanchedalmond;
+}
+
+/* 4. Group Selectors: p, .className, #idName, a */
+.list-1,
+.list-3,
+span,
+p.p2 {
+  background-color: black;
+  color: white;
+}
+
+/* 5. Individually selectors with type, class and id */
+p.p1 {
+  background-color: violet;
+  color: black;
+}
+
+#id-5 {
+  background-color: #254fc3;
+  color: #445ddf;
+}
