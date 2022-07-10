@@ -5,11 +5,14 @@
 /* 3. class Selector */
 /* 4. Group Selectors: p, .className, #idName, a */
 /* 5. Individually selectors with type, class and id */
-/* 6. Combinators */
+/* 6. Id Selectors */
+/* 7. Combinators */
 /*      6.1 descendant selector (space)
         6.2 child selector (>)
         6.3 adjacent sibling selector (+)
         6.4 general sibling selector (~) */
+/* 8. Attribute selector */
+/* [] : are used to select attributes */
 
 /* 1. Universal Selector */
 * {
@@ -54,7 +57,55 @@ p.p1 {
   color: black;
 }
 
+/* 6. Id Selectors */
 #id-5 {
   background-color: #254fc3;
   color: #445ddf;
 }
+/* 6.1 descendant selector (space) */
+/* div > ul > li.second-div-li {
+  background-color: yellowgreen;
+  display: block;
+} */
+
+/* 6.1 descendant selector (space) */
+div ul li.youtube {
+  background-color: yellowgreen;
+  display: block;
+}
+
+/* 6.3 adjacent sibling selector (+) */
+/* .youtube + .facebook > a > span {
+  background-color: blue;
+  color: white;
+} */
+
+/* 6.3 general sibling selector (~) */
+.youtube ~ .linked-in > a {
+  background-color: red;
+  color: black;
+}
+
+/* [] : are used to select attributes */
+input[type] {
+  background-color: white;
+}
+
+button[type="submit"] {
+  background-color: yellow;
+}
+
+a[title="google"] {
+  color: rosybrown;
+  background-color: red;
+}
+
+li[class~=" facebook"] {
+  background-color: black;
+  color: white;
+}
+/* 
+li[class^=" facebook"]
+li[class$=" facebook"]
+li[class|=" facebook"]
+li[class*=" facebook"] */
