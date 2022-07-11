@@ -104,6 +104,8 @@ li[class~=" facebook"] {
   background-color: black;
   color: white;
 }
+
+/* ---Practice it yourself --- */
 /* 
 li[class^=" facebook"]
 li[class$=" facebook"]

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.main {
+  background-color: aqua;
+}
+
+.main > ul {
+  width: fit-content;
+  margin: auto;
+  font-size: 1rem;
+}
+
+/* .main > ul > li:nth-child(2n) {
+  color: white;
+}
+
+.main > ul > li:nth-child(2n + 1) {
+  color: black;
+} */
+
+ul {
+  list-style: number;
+}
+
+.main > ul > li:nth-child(3n-1) {
+  color: white;
+}
+
+.main > ul {
+  /* list-style-image: url(./Assets/images/avenger.png); */
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Lobster", cursive;
+}
