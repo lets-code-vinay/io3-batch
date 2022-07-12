@@ -36,3 +36,17 @@ ul {
   /* font-family: "Dancing Script", cursive; */
   font-family: "Lobster", cursive;
 }
+
+.pokemon > ul {
+  background-color: bisque;
+  width: fit-content;
+  margin: auto;
+}
+
+.pokemon > ul > li:first-child {
+  color: red;
+}
+
+.pokemon > ul > li:last-child {
+  color: blue;
+}
