@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Display property</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .div {
+      border: 1px solid red;
+    }
+
+    #block-para {
+      width: fit-content;
+      height: fit-content;
+      background-color: aqua;
+      margin: 2% auto 0%;
+    }
+   
+    #block-2{
+        background-color: blue;
+    }
+    #block-3{
+        background-color: yellow;
+    }
+    #block-4{
+        background-color: greenyellow;
+      margin: 0% 0 2% 0;
+
+    }
+
+    .inlineClass{
+        display: inline;
+    }
+    #inline-1{
+        background-color: red;
+    }
+    #inline-2{
+        background-color: blue;
+    }
+    #inline-3{
+        background-color: yellow;
+    }
+    #inline-4{
+        background-color: greenyellow;
+    }
+
+    .inlineBlockClass {
+      height: 100px;
+      width: 100px;
+      border: 1px solid red;
+      display: inline-block;
+    }
+
+    .div3,
+    .div4 {
+      height: 100px;
+      width: 100px;
+      border: 1px solid red;
+    }
+
+    #inline-block-1{
+        background-color: red;
+    }
+    #inline-block-2{
+        background-color: blue;
+    }
+    #inline-block-3{
+        background-color: yellow;
+    }
+    #inline-block-4{
+        background-color: greenyellow;
+    }
+
+    #none1{
+        background-color: aliceblue;
+        display: none;
+    }
+    #none2{
+        background-color: gold;
+        opacity: 0;
+    }
+    #none3{
+        background-color: palegoldenrod;
+        visibility: hidden;
+    }
+    #none4{
+        background-color:rebeccapurple;
+    }
+
+    .image{
+        background-color: blue;
+
+    }
+    .image img{
+        opacity: 0.2;
+    filter: blur(2px);
+    }
+  </style>
+  <body>
+    <div class="inline-block">
+        <div class="inlineClass" id="inline-1">This is Div 1 with inline-block</div>
+        <div class="inlineClass" id="inline-2">This is Div 2 with inline-block</div>
+        <div class="inlineClass" id="inline-3">This is Div 3 with inline-block</div>
+        <div class="inlineClass" id="inline-4">This is Div 4 with inline-block</div>
+      </div>
+    <div class="block">
+      <div class="div" id="block-para">
+        <p>
+          This is <strong>display: block</strong> paragraph, Generating random paragraphs can be an excellent
+          way for writers to get their creative flow going at the beginning of
+          the day.
+          <div style="font-weight: 600">
+            The writer has no idea what topic the random paragraph will be about
+          </div>
+          The writer can use the paragraph as the first one of a short story and
+          build upon it. 
+        </p>
+      </div>
+      <div class="div" id="block-2">This is Div 2 with block</div>
+      <div class="div" id="block-3">This is Div 3 with block</div>
+      <div class="div" id="block-4">This is Div 4 with block</div>
+    </div>
+    
+    <div class="inline-block">
+        <div class="inlineBlockClass" id="inline-block-1">This is Div 1 with inline-block</div>
+        <div class="inlineBlockClass" id="inline-block-2">This is Div 2 with inline-block</div>
+        <div class="inlineBlockClass" id="inline-block-3">This is Div 3 with inline-block</div>
+        <div class="inlineBlockClass" id="inline-block-4">This is Div 4 with inline-block</div>
+    </div>
+
+    <div class="none">
+      <div class="none-3" id="none1"><a href="#">This is display property none 1</a></div>
+      <div class="none-3" id="none2"><a href="#">This is display property none 2</a></div>
+      <div class="none-3" id="none3"><a href="#">This is display property none 3</a></div>
+      <div class="none-3" id="none4"><a href="#">This is display property none 4</a></div>
+    </div>
+    <div class="image">
+        <img src="https://media.gettyimages.com/photos/closeup-of-parakeet-perching-on-branchrajahmundryandhra-pradeshindia-picture-id1292445444?s=612x612" alt="parrot" />
+    </div>
+    </body>
+</html>

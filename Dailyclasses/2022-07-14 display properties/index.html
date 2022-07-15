@@ -12,137 +12,70 @@
       padding: 0;
       box-sizing: border-box;
     }
-    .div {
-      border: 1px solid red;
+    .flex {
+      display: flex;
+      /* flex-direction: row; */
+      flex-direction: row-reverse;
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+
+      padding: 2%;
+    }
+    .flexClass {
+      background-color: bisque;
+      border-right: 3px solid black;
+      border-left: 3px solid black;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      width: 200px;
+      height: 100px;
+      margin: 0 auto 1px 5px;
     }
 
-    #block-para {
-      width: fit-content;
-      height: fit-content;
+    .flex-1 {
+      display: flex;
+      flex-direction: row; /*  It will keep all the children horizontally in sequence like 1,2,3,4   */
+      /* flex-direction: row-reverse; to keep all children in reverse order like 4,3,2,1 */
+      /* flex-direction: column; to keep all children vertically in sequence order like 1,2,3,4 */
+      /* flex-direction: column-reverse; to keep all vertically children in reverse order like 4,3,2,1 */
+
+      /* justify-content: left;   To put all children on left side use properties --> left, flex-start, start*/
+      /* justify-content: right;   To put all children on right side use properties --> right, flex-end, end*/
+      /* justify-content: center;   To put all children on center side use properties --> center*/
+      /* justify-content: space-around;   It will provide space on the end of children*/
+      /* justify-content: space-evenly;   It will provide equal space on the end and in between of children*/
+      justify-content: space-between; /*   It will provide space in between of children*/
+
+      /* align-items: start;   To put all children on top side use properties --> start, flex-start, self-start, baseline*/
+      /* align-items: end;   To put all children on bottom side use properties --> end, flex-end, self-end*/
+      /* align-items: center;   To put all children on center side use properties --> center */
+      /* align-items: space-around;   It will provide space on the end of children*/
+      /* align-items: space-evenly;   It will provide equal space on the end and in between of children*/
+      /* align-items: space-between;   It will provide space in between of children */
+      align-items: stretch; /*   It will stretch and cover entire height of parent*/
+
+      background-color: darkblue;
+      height: 300px;
+      padding: 2%;
+    }
+
+    .flexClass-1 {
       background-color: aqua;
-      margin: 2% auto 0%;
-    }
-   
-    #block-2{
-        background-color: blue;
-    }
-    #block-3{
-        background-color: yellow;
-    }
-    #block-4{
-        background-color: greenyellow;
-      margin: 0% 0 2% 0;
-
-    }
-
-    .inlineClass{
-        display: inline;
-    }
-    #inline-1{
-        background-color: red;
-    }
-    #inline-2{
-        background-color: blue;
-    }
-    #inline-3{
-        background-color: yellow;
-    }
-    #inline-4{
-        background-color: greenyellow;
-    }
-
-    .inlineBlockClass {
-      height: 100px;
-      width: 100px;
-      border: 1px solid red;
-      display: inline-block;
-    }
-
-    .div3,
-    .div4 {
-      height: 100px;
-      width: 100px;
-      border: 1px solid red;
-    }
-
-    #inline-block-1{
-        background-color: red;
-    }
-    #inline-block-2{
-        background-color: blue;
-    }
-    #inline-block-3{
-        background-color: yellow;
-    }
-    #inline-block-4{
-        background-color: greenyellow;
-    }
-
-    #none1{
-        background-color: aliceblue;
-        display: none;
-    }
-    #none2{
-        background-color: gold;
-        opacity: 0;
-    }
-    #none3{
-        background-color: palegoldenrod;
-        visibility: hidden;
-    }
-    #none4{
-        background-color:rebeccapurple;
-    }
-
-    .image{
-        background-color: blue;
-
-    }
-    .image img{
-        opacity: 0.2;
-    filter: blur(2px);
+      width: fit-content;
     }
   </style>
   <body>
-    <div class="inline-block">
-        <div class="inlineClass" id="inline-1">This is Div 1 with inline-block</div>
-        <div class="inlineClass" id="inline-2">This is Div 2 with inline-block</div>
-        <div class="inlineClass" id="inline-3">This is Div 3 with inline-block</div>
-        <div class="inlineClass" id="inline-4">This is Div 4 with inline-block</div>
-      </div>
-    <div class="block">
-      <div class="div" id="block-para">
-        <p>
-          This is <strong>display: block</strong> paragraph, Generating random paragraphs can be an excellent
-          way for writers to get their creative flow going at the beginning of
-          the day.
-          <div style="font-weight: 600">
-            The writer has no idea what topic the random paragraph will be about
-          </div>
-          The writer can use the paragraph as the first one of a short story and
-          build upon it. 
-        </p>
-      </div>
-      <div class="div" id="block-2">This is Div 2 with block</div>
-      <div class="div" id="block-3">This is Div 3 with block</div>
-      <div class="div" id="block-4">This is Div 4 with block</div>
-    </div>
-    
-    <div class="inline-block">
-        <div class="inlineBlockClass" id="inline-block-1">This is Div 1 with inline-block</div>
-        <div class="inlineBlockClass" id="inline-block-2">This is Div 2 with inline-block</div>
-        <div class="inlineBlockClass" id="inline-block-3">This is Div 3 with inline-block</div>
-        <div class="inlineBlockClass" id="inline-block-4">This is Div 4 with inline-block</div>
+    <div class="flex">
+      <div class="flexClass" id="flex-1">This is Div 1 with flex</div>
+      <div class="flexClass" id="flex-2">This is Div 2 with flex</div>
+      <div class="flexClass" id="flex-3">This is Div 3 with flex</div>
+      <div class="flexClass" id="flex-4">This is Div 4 with flex</div>
     </div>
 
-    <div class="none">
-      <div class="none-3" id="none1"><a href="#">This is display property none 1</a></div>
-      <div class="none-3" id="none2"><a href="#">This is display property none 2</a></div>
-      <div class="none-3" id="none3"><a href="#">This is display property none 3</a></div>
-      <div class="none-3" id="none4"><a href="#">This is display property none 4</a></div>
+    <div class="flex-1">
+      <span class="flexClass-1" id="flex-5">This is span 1</span>
+      <span class="flexClass-1" id="flex-6">This is span 2</span>
+      <span class="flexClass-1" id="flex-7">This is span 3</span>
     </div>
-    <div class="image">
-        <img src="https://media.gettyimages.com/photos/closeup-of-parakeet-perching-on-branchrajahmundryandhra-pradeshindia-picture-id1292445444?s=612x612" alt="parrot" />
-    </div>
-    </body>
+  </body>
 </html>
