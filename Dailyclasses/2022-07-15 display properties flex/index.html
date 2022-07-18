@@ -14,8 +14,8 @@
     }
     .flex {
       display: flex;
-      /* flex-direction: row; */
-      flex-direction: row-reverse;
+      flex-direction: row;
+      /* flex-direction: row-reverse; */
       /* flex-direction: column; */
       /* flex-direction: column-reverse; */
 
@@ -27,9 +27,12 @@
       border-left: 3px solid black;
       border-top-right-radius: 50px;
       border-bottom-left-radius: 50px;
-      width: 200px;
       height: 100px;
       margin: 0 auto 1px 5px;
+    }
+    .flexClass-1 {
+      width: fit-content;
+      background-color: aqua;
     }
 
     .flex-1 {
@@ -59,16 +62,24 @@
       padding: 2%;
     }
 
-    .flexClass-1 {
-      background-color: aqua;
-      width: fit-content;
+    #flex-3 {
+      order: 4; /* To relocate any element according to requirement */
+    }
+    #flex-2 {
+      flex-grow: 2; /* To increase the width of any element. Will work when flex-wrap:wrap is applied to parent */
+    }
+    #flex-4 {
+      flex-shrink: 2; /* To decrease the width of any element. Will work when no flex-wrap / flex-wrap:no-wrap is applied to parent */
     }
   </style>
   <body>
     <div class="flex">
       <div class="flexClass" id="flex-1">This is Div 1 with flex</div>
       <div class="flexClass" id="flex-2">This is Div 2 with flex</div>
-      <div class="flexClass" id="flex-3">This is Div 3 with flex</div>
+      <div class="flexClass" id="flex-3">
+        This is Div 3 with flex<br />
+        on 4th place due to order:4
+      </div>
       <div class="flexClass" id="flex-4">This is Div 4 with flex</div>
     </div>
 
