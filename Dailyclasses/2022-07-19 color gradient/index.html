@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color gradients</title>
+  </head>
+  <style>
+    /* 1. Linear Gradient */
+    /* 2. Radial Gradient */
+    /* 3. Conical Gradient */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .Spiderman,
+    .Ironman,
+    .Thor,
+    .Hulk,
+    .antman {
+      width: 150px;
+      height: 100px;
+    }
+
+    .Spiderman {
+      background-color: black;
+      /* background-image: linear-gradient(red, white, green, grey);  --default properties- you can add multiple colors*/
+      /* background-image: linear-gradient(to left, red, white, green, grey); here first color will be at right and ends at left*/
+      /* background-image: linear-gradient(to right, red, white, green, grey); here first color will be at left and ends at right*/
+      /* background-image: linear-gradient(to top, red, blue, green, grey);  here first color will be at bottom and ends at top*/
+      /* background-image: linear-gradient(to bottom, red, yellow, green, grey); here first color will be at top and ends at bottom*/
+      /* background-image: linear-gradient(45deg, red, yellow, green, grey); Here you can apply degree to rotate the color*/
+      /*background-image: linear-gradient(
+        60deg,
+        red,
+        yellow,
+        green,
+        grey
+      );  Here you can apply degree to rotate the color */
+      /* background-image:linear-gradient(red 0%, orange 25%, yellow 90%, green 75%, blue 100%); */
+      /* --default properties- you can add multiple colors */
+      background-image: linear-gradient(
+        green 0% 10%,
+        yellow 25% 30%,
+        brown 40% 70%,
+        #ff67ad 80% 90%,
+        #da8000 100%
+      );
+    }
+
+    .Ironman {
+      background-color: red;
+      /* background-image: radial-gradient(red, blue); */
+      /* background-image: radial-gradient(red, yellow, blue, green); */
+      /* background-image: radial-gradient(
+        closest-side at 20% 20%,
+        yellow 30%,
+        yellowgreen 90%
+      ); */
+
+      /*
+      to start radial gradient from corner of div
+      */
+      /* background-image: radial-gradient(
+        farthest-side at 100% 100%,
+        black 40%,
+        red 100%
+      ); */
+      /* background-image: radial-gradient(
+        farthest-side at 100% 100%,
+        black 40%,
+        red 100%
+      ); */
+      background-image: radial-gradient(
+        farthest-side at 0% 100%,
+        black 40%,
+        red 100%
+      );
+      /* background-image: radial-gradient(
+        farthest-side at 100% 100%,
+        black 40%,
+        red 100%
+      ); */
+    }
+    .Thor {
+      background-image: radial-gradient(
+        farthest-side at 100% 0%,
+        black 40%,
+        red 100%
+      );
+    }
+    .Hulk {
+      background-image: radial-gradient(
+        farthest-side at 0% 0%,
+        black 40%,
+        red 100%
+      );
+    }
+    .antman {
+      border-radius: 50%;
+      background-image: conic-gradient(
+        red 10%,
+        yellow 20%,
+        green 40%,
+        blue 60%,
+        black 90%
+      );
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="Spiderman">Spider man</div>
+
+      <div class="Ironman">Iron man</div>
+
+      <div class="Thor">Thor</div>
+
+      <div class="Hulk">Hulk</div>
+      <div class="antman">Hulk</div>
+    </div>
+  </body>
+</html>
