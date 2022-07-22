@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -----Get CDN (Content-delivery network) of Font-awesome from following site----  -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <title>font-awesome</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .fa {
+      color: brown;
+    }
+    .fa-solid {
+      color: rgb(152, 105, 228);
+    }
+    .fa-star:hover {
+      color: white;
+      text-shadow: 0px 0px 2px gray;
+      cursor: pointer;
+    }
+    .fa-brands {
+      color: red;
+    }
+    .fa-regular {
+      color: blue;
+    }
+    .green {
+      color: gray;
+    }
+    ol {
+      padding: 1% 0 0 5%;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <i class="fa fa-car"></i>
+      <i class="fa-solid fa-indian-rupee-sign"></i>
+      <i class="fa-brands fa-facebook-messenger"></i>Hello
+      <i class="fa-brands fa-500px"></i>
+      <i class="fa-solid fa-anchor"></i>
+      <br />
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star green"></i>
+      <br />
+      <i class="fa-solid fa-rupee-sign"></i>
+      <i class="fa-solid fa-yen-sign"></i>
+
+      <!-- HTML Entities -->
+      <br />
+      HTML Entities -special Characters &#8377;
+      <p>
+        hello i am providing extra &nbsp; &nbsp; &nbsp; &nbsp; space.
+        <br />This is an <i class="fa-brands fa-apple"></i><br />
+        I love to play <i class="fa-solid fa-chess"></i> <br />
+        I am riding <i class="fa-solid fa-horse"></i><br />
+        I want to roam all around the <i class="fa-solid fa-earth-americas"></i>
+      </p>
+      <br />
+
+      <p>
+        To read about cursor properties
+        <a
+          href="https://www.w3schools.com/cssref/pr_class_cursor.asp"
+          target="_blank"
+          >click Here</a
+        >
+      </p>
+      <ol>
+        <!-- --- To get entities -- -->
+        <!-- https://www.w3schools.com/html/html_entities.asp -->
+        <span
+          >To read more about HTML Entities
+          <a
+            href="https://www.w3schools.com/html/html_entities.asp"
+            target="_blank"
+            >click here</a
+          >
+        </span>
+        <li>Greater than- &gt; - gt;</li>
+        <li>Less than- &lt; - lt;</li>
+        <li>Space- &nbsp; - nbsp;</li>
+        <li>Copyright- &copy; - copy;</li>
+        <li>Trademark- &trade; - trade;</li>
+        <li>Register- &#174; - #174;</li>
+      </ol>
+    </div>
+  </body>
+</html>
