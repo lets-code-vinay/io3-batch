@@ -6,4 +6,3 @@
 6. you can place images where you want to. for that you can download png images from
 7. https://www.freeiconspng.com/images/pokemon-png  
 8. Please note the black area are also div.
-9.
