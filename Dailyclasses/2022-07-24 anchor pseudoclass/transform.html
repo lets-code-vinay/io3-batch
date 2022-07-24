@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform & Transition</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      background-color: aqua;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly !important;
+      flex-wrap: wrap;
+    }
+    .div-1,
+    .div-2,
+    .div-3,
+    .div-4,
+    .div-6,
+    .div-7,
+    .div-8,
+    .div-9,
+    .div-10,
+    .div-11,
+    .div-5 {
+      margin: 5%;
+      background-color: bisque;
+      width: 20%;
+      height: 200px;
+      border: 1px solid green;
+      transition: 1s ease-in-out;
+      transition-delay: 2s;
+      border-radius: 10px;
+    }
+
+    .div-1:hover {
+      transform: rotate(90deg);
+      background-color: brown;
+      cursor: pointer;
+    }
+
+    .div-2:hover {
+      /* transform: translateX(-100px); */
+      /* transform: translateX(100px); */
+      /* transform: translateX(-10%); */
+      transform: translateX(10%);
+      background-color: brown;
+      cursor: pointer;
+    }
+    .div-3:hover {
+      /* transform: translateY(-100px); */
+      /* transform: translateY(100px); */
+      transform: translateY(-10%);
+      /* transform: translateY(10%); */
+      background-color: brown;
+      cursor: pointer;
+    }
+    .div-4:hover {
+      /* transform: translate(-100px); */
+      /* transform: translate(100px); */
+      transform: translate(-10%, -10%);
+      /* transform: translate(10%); */
+      background-color: brown;
+      cursor: pointer;
+    }
+
+    .div-5:hover {
+      transform: skewX(-10deg);
+      /* transform: skewX(45deg); */
+      background-color: brown;
+      cursor: pointer;
+    }
+    .div-6:hover {
+      transform: skewY(-10deg);
+      /* transform: skewY(45deg); */
+      background-color: brown;
+      cursor: pointer;
+    }
+    .div-7:hover {
+      /* transform: skew(-10deg, 10deg); */
+      transform: skew(45deg, 10deg);
+      background-color: brown;
+      cursor: pointer;
+    }
+    .div-8:hover {
+      background-color: red;
+      /* transform: scale(2); increase || decrease height && width of any element    */
+      transform: scale(1.5, 1);
+      /* transform: scale(1.5, 0.5); */
+      /* increase || decrease  width of any element    */
+    }
+    .div-9:hover {
+      background-color: red;
+      /* transform: scaleX(1.5); */
+      transform: scaleX(0.8);
+    }
+    .div-10:hover {
+      background-color: red;
+      transform: scaleY(1.5);
+      /* transform: scaleY(0.8); */
+    }
+
+    .div-11:hover {
+      background-color: red;
+      /* transform: scaleY(1.5); */
+      transform: none;
+      /* transform: scaleY(0.8); */
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="div-1">1 rotate</div>
+      <div class="div-2">2 TranslateX</div>
+      <div class="div-3">3 TranslateY</div>
+      <div class="div-4">4 Translate X and Y</div>
+      <div class="div-5">5 SkewX</div>
+      <div class="div-6">6 Skew Y</div>
+      <div class="div-7">7 Skew</div>
+      <div class="div-8">8 Scale</div>
+      <div class="div-9">9 ScaleX</div>
+      <div class="div-10">10 ScaleY</div>
+      <div class="div-11">11 TranslateZ</div>
+    </div>
+  </body>
+</html>
