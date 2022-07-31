@@ -9,11 +9,24 @@ body {
 }
 
 .title {
-  width: 10%;
-  display: inline;
-  margin: 1% 38%;
+  width: fit-content;
+  margin: 1% auto;
+  /*  font-style: normal; It will remove font italic  */
+  /* font-style: italic; It will make font italic  */
+
+  /* font-variant: all-petite-caps it will make all the text in capital form but in smaller size */
+  /* normal; */
+  /* font-variant: small-caps; It will make first character capital and large as compare to other. and other characters  will also be in capital form*/
+  /* font-variant: unicase; it will make first letter in capital but size of character is small and rest o f the character will be in small -letter but those will be in bold */
+  /* font-variant: all-petite-caps  all character will be in caps but height will be short*/
+
+  /*----short hand --> writing multiple line or properties in single line*/
+  /* Font: style, variant, size/font-height, family */
 }
 
+.penguins-data {
+  color: #a8823e;
+}
 .main {
   width: 25%;
   height: 300px;
