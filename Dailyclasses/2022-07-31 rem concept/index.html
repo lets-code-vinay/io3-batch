@@ -7,19 +7,23 @@
     <title>REM</title>
   </head>
   <style>
+    /* 1 rem == 16pixel */
+    /* 1 rem == 10pixel --> (16px/62.5 --> 10) */
     * {
       font-size: 62.5%;
     }
     .element {
-      font-size: 62.5%;
+      /* font-size: 62.5%; */
     }
+
     .penguins-data {
       color: blue;
-      font-size: 20px;
+      font-size: 16px;
     }
     .penguins-data-2 {
       color: red;
-      font-size: 2rem;
+      /* font-size: 1rem; */
+      font-size: calc(1rem + 2px);
     }
     .penguins-data-3 {
       color: green;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-properties</title>
+  </head>
+  <style>
+    .penguins-data {
+      color: rgb(36, 36, 3);
+      line-height: 20px;
+      /* line-height: 20px; Line height: use to provide gap between two line; */
+      letter-spacing: 5px;
+      /* letter-spacing: 5px; letter-spacing use to provide gap between two*/
+    }
+
+    .penguins-data-2 {
+      color: red;
+      line-height: 150%;
+      background-color: bisque;
+
+      /* text-align: is used to align the text according to width size and as per location(center, left, right); */
+      /* text-align: center; to align text in the center of div */
+      /* text-align: start to align text on the left hand side use (left, start); */
+      /* text-align: end::-> to align texts on the right hand side use (right, end) ; */
+      /* text-align: justify ; it adjusts text to the full width of the parent and tries to cover entire width */
+      /* text-align: justify; */
+
+      /* text-align-last: is used to align the last line according to width size and as per location(center, left, right); */
+      /* text-align-last: center; to align last line in the center of parent */
+      /* text-align-last: start; to align last line on the left hand side: use (left, start); */
+      /* text-align-last: end; to align last line text on the right hand side use: (right, end) ; */
+      /* text-align-last: justify ; it adjusts last line texts to the full width of the parent and tries to cover entire width */
+      /* text-align-last: justify; */
+    }
+
+    .directionText {
+      /* To provide direction of text (from where we want to start the text) from right to left , left to right */
+      /* right to left */
+      /* direction: rtl; */
+
+      /* left to right */
+      /* direction: rtl; */
+
+      /* to flip the text use unicode-bidi with direction rtl */
+      unicode-bidi: bidi-override;
+      direction: rtl;
+    }
+
+    .penguins-data-3 {
+      color: brown;
+    }
+
+    /* Vertical-align properties used on images which are used inside any para and to make it up down as per requirement and need of para */
+    p > img {
+      /* To make icon or image on the center use baseline,middle, revert, unset */
+      /* vertical-align: baseline; */
+      /* vertical-align: middle; */
+      /* vertical-align: revert; */
+      /* vertical-align: unset; */
+
+      /* To make icon or image on the top level of any paragraph use(super, top, text-top) */
+      /* vertical-align: super; */
+      /* vertical-align: top; */
+      /* vertical-align: text-top; */
+
+      /* To make icon or image on the bottom level of any paragraph use(sub, bottom, text-bottom) */
+      /* vertical-align: sub; */
+      /* vertical-align: bottom; */
+      vertical-align: text-bottom;
+    }
+  </style>
+  <body>
+    <p class="penguins-data">
+      Penguins are a group of aquatic flightless birds. They live almost
+      exclusively in the Southern Hemisphere: only one species, the Galápagos
+      penguin, is found north of the Equator. Highly adapted for life in the
+      water
+    </p>
+    <p class="penguins-data-2">
+      Penguins are a group of aquatic flightless birds. They live almost
+      exclusively in the Southern Hemisphere:<span>
+        only one species, the Galápagos penguin,</span
+      >
+      is found north of the Equator. penguins have counter shaded dark and white
+      plumage and flippers for swimming
+    </p>
+    <div class="element">
+      <p class="penguins-data-3">
+        Penguins are a group of aquatic flightless birds.
+        <img src="penguin.svg" width="9px" height="9px" />
+        They live almost exclusively in the Southern Hemisphere: only one
+        species, the Galápagos penguin, is found north of the Equator. Highly
+        adapted for life in the water, penguins have counter shaded dark and
+        white plumage and flippers for swimming
+      </p>
+    </div>
+    <p class="directionText">white plumage and flippers for swimming</p>
+  </body>
+</html>
