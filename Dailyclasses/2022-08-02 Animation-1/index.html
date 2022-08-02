@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      width: 50%;
+      height: 30px;
+      margin: 5px auto;
+      background-color: aqua;
+    }
+    .child-div {
+      width: 0%;
+      height: 30px;
+      background-color: red;
+      animation: progress-bar;
+      animation-duration: 5s;
+    }
+    @keyframes progress-bar {
+      from {
+        width: 0%;
+        background-color: green;
+      }
+      to {
+        width: 100%;
+        background-color: black;
+      }
+    }
+
+    /* ------ */
+    .pokemon {
+      width: 50%;
+      height: 150px;
+      margin: auto;
+      background-color: aqua;
+    }
+    .pikachu {
+      width: 40px;
+      height: 40px;
+      /* background-color: rgb(22, 145, 145); */
+      position: relative;
+      animation: pokemon-play;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes pokemon-play {
+      from {
+        left: 0;
+        top: 0;
+        /* background-color: black;
+        border: 3px solid yellow; */
+        transform: rotate(-180deg);
+      }
+
+      to {
+        left: calc(100% - 40px);
+        top: calc(150px - 40px);
+        /* background-color: rgb(122, 54, 54);
+        border-radius: 50%; */
+      }
+    }
+
+    .pokemon-2 {
+      width: 50%;
+      height: 150px;
+      margin: 10px auto;
+      background-color: rgb(70, 206, 82);
+    }
+    .pikachu-2 {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      animation: pikachu-move;
+      animation-duration: 10s;
+      /* animation-iteration-count: 2; */
+      animation-iteration-count: infinite;
+      /* animation-direction: reverse; */
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+
+      /*
+      Learn animation-timing-function from here with example 
+      https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-timing-function2 
+      */
+      /* animation-timing-function: ease-in; starting with slow ends with fast*/
+      /* animation-timing-function: ease-out; Starting is fast ending with slow*/
+      /* ease-in-out: starts-slow, center-fast, ends-slow */
+      animation-timing-function: ease-in-out;
+      /* animation-play-state: paused;To stop the animation */
+      /* animation-play-state: play; To play or run the animation */
+      /* animation-play-state: running; To play or run the animation */
+    }
+
+    @keyframes pikachu-move {
+      0% {
+        left: 0;
+        top: 0;
+      }
+
+      25% {
+        left: calc(100% - 40px);
+        top: 0;
+      }
+
+      50% {
+        left: calc(100% - 40px);
+        top: calc(150px - 40px);
+      }
+      75% {
+        left: 0;
+        top: calc(150px - 40px);
+      }
+
+      100% {
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .ball-container {
+      width: 60%;
+      height: 150px;
+      margin: 10px auto;
+      background-color: rgb(102, 112, 197);
+    }
+
+    .ball {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      background-image: radial-gradient(black, yellow);
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border-bottom: 1px solid black;
+      animation: ball-jump;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+
+    @keyframes ball-jump {
+      0% {
+        top: 0;
+        left: 0;
+      }
+      10% {
+        top: calc(150px - 25px);
+        left: 0;
+      }
+      20% {
+        top: calc(150px - 100px);
+        left: calc(100% - 275px);
+      }
+      40% {
+        top: calc(150px - 25px);
+        left: calc(100% - 250px);
+      }
+
+      60% {
+        top: calc(150px - 50px);
+        left: calc(100% - 225px);
+      }
+      80% {
+        top: calc(150px - 25px);
+        left: calc(100% - 200px);
+      }
+      100% {
+        top: calc(150px - 25px);
+        left: calc(100% - 50px);
+      }
+    }
+
+    .shorthand {
+      width: 200px;
+      height: 200px;
+      margin: 10px auto;
+      background-color: rgb(214, 28, 34);
+    }
+    .ball-rotate {
+      position: relative;
+      width: 100px;
+      margin: auto;
+      height: 100px;
+      top: 12%;
+      left: 0;
+      border-radius: 50%;
+      border: 1px solid white;
+      /* Shorthand from Animation */
+      /* animation: name, times-in-secs, timing-function, delay, iteration-count,
+        direction; */
+
+      /* animation: ball-rotate 5s linear 1s infinite normal; */
+      animation: ball-rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+    .ball-loader {
+      width: 20px;
+      height: 20px;
+      background-color: blanchedalmond;
+      border-radius: 50%;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    @keyframes ball-rotate {
+      0% {
+        transform: rotate(25deg);
+      }
+      10% {
+        transform: rotate(45deg);
+      }
+      20% {
+        transform: rotate(90deg);
+      }
+      30% {
+        transform: rotate(135deg);
+      }
+      40% {
+        transform: rotate(180deg);
+      }
+      50% {
+        transform: rotate(225deg);
+      }
+      60% {
+        transform: rotate(270deg);
+      }
+      80% {
+        transform: rotate(315deg);
+      }
+      90% {
+        transform: rotate(355deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <!-- What is animation?  -->
+    <!-- Animation is used to make any element live and to provide some motion?  -->
+    <!--    1. Animation
+            2. @keyframe   -->
+    <div class="main">
+      <div class="child-div"></div>
+    </div>
+
+    <div class="pokemon">
+      <img src="pikachu.png" class="pikachu" />
+      2 way animation using keyframes (to from) properties
+    </div>
+
+    <div class="pokemon-2">
+      <img src="pikachu.png" class="pikachu-2" />
+      multipoint animation using keyframes percentage properties
+    </div>
+
+    <div class="ball-container">
+      <div class="ball"></div>
+    </div>
+
+    <div class="shorthand">
+      <div class="ball-rotate">
+        <div class="ball-loader"></div>
+      </div>
+    </div>
+  </body>
+</html>
