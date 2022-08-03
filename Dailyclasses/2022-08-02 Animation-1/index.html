@@ -22,10 +22,12 @@
       width: 0%;
       height: 30px;
       background-color: red;
-      animation: progress-bar;
-      animation-duration: 5s;
+      animation: progress;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
-    @keyframes progress-bar {
+
+    @keyframes progress {
       from {
         width: 0%;
         background-color: green;
@@ -197,7 +199,10 @@
       border-radius: 50%;
       border: 1px solid white;
       /* Shorthand from Animation */
-      /* animation: name, times-in-secs, timing-function, delay, iteration-count,
+      /* animation: name, 
+      times-in-secs,
+       timing-function, 
+      , iteration-count,
         direction; */
 
       /* animation: ball-rotate 5s linear 1s infinite normal; */

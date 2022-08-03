@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation-2</title>
+  </head>
+
+  <style>
+    .container {
+      width: 120px;
+      height: 120px;
+      margin: 20% auto;
+      background-color: rgb(38, 135, 103);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .bar-1,
+    .bar-2,
+    .bar-3 {
+      width: 20%;
+    }
+
+    .bar-1 {
+      background-color: #1e3f74;
+      height: 100px;
+      animation: bar-1 2s linear 0s infinite normal;
+    }
+    .bar-2 {
+      background-color: #516a91;
+      height: 80px;
+      animation: bar-2 2s linear 0s infinite normal;
+    }
+    .bar-3 {
+      background-color: #b4bfd0;
+      height: 60px;
+      animation: bar-3 2s linear 0s infinite normal;
+    }
+
+    @keyframes bar-1 {
+      0% {
+        height: 100px;
+        background-color: #1e3f74;
+      }
+      33% {
+        height: 80px;
+        background-color: #516a91;
+      }
+      66% {
+        height: 60px;
+        background-color: #b4bfd0;
+      }
+      100% {
+        height: 100px;
+        background-color: #1e3f74;
+      }
+    }
+
+    @keyframes bar-2 {
+      0% {
+        height: 80px;
+        background-color: #516a91;
+      }
+      25% {
+        height: 100px;
+        background-color: #1e3f74;
+      }
+      50% {
+        height: 80px;
+        background-color: #516a91;
+      }
+      75% {
+        height: 60px;
+        background-color: #b4bfd0;
+      }
+      100% {
+        height: 80px;
+        background-color: #516a91;
+      }
+    }
+
+    @keyframes bar-3 {
+      0% {
+        height: 60px;
+        background-color: #b4bfd0;
+      }
+      33% {
+        height: 80px;
+        background-color: #516a91;
+      }
+      66% {
+        height: 100px;
+        background-color: #1e3f74;
+      }
+      100% {
+        height: 60px;
+        background-color: #b4bfd0;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="bar-1"></div>
+      <div class="bar-2"></div>
+      <div class="bar-3"></div>
+    </div>
+  </body>
+</html>
