@@ -1,0 +1,11 @@
+Please Note your Test:
+1. Only three pages are there.
+2. Page one is homepage.
+3. On clicking any video that video's page (Page-2)would be open where it is scrolling. (Page-2.1 --> take hint from youtube)
+4. on Top + icon, If user click on this icon Page-3 would be open.
+5. Keep mind of styling and color combination
+6. Make it responsive.
+7. Use iframe. if it not working, Still fine.
+9. Submission time: Sunday 2pm. After that no commit will be entertained
+
+Have fun
