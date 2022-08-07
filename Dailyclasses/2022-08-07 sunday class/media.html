@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /**
+Media query for multiple screen
+*/
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .spiderman-image,
+    .spiderman-text {
+      width: 50%;
+    }
+
+    .spiderman-text .superhero-spiderman {
+      pointer-events: none;
+    }
+    .spiderman-text .superhero {
+      pointer-events: auto;
+    }
+
+    /* 320px — 480px: small devices and Mobile devices
+481px — 769px: iPads, Tablets
+768px — 1023px: Small screens, laptops
+1024px — 1199px:  Medium screens
+1200px — 1919px: Desktops, large screens
+1920px and more —  Extra large screens, TV */
+    @media screen and (max-width: 479px) {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .spiderman-image,
+      .spiderman-text {
+        width: 100%;
+      }
+
+      .random {
+        background-color: #9b1005;
+        color: white;
+      }
+      .mobile {
+        background-color: #abc905;
+      }
+      .tab,
+      .medium,
+      .desktop,
+      .laptop,
+      .hd {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 769px) {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .spiderman-image,
+      .spiderman-text {
+        width: 100%;
+      }
+
+      .random {
+        background-color: #8844ff;
+        color: white;
+      }
+      .tab {
+        background-color: #110905;
+        color: wheat;
+      }
+      .mobile,
+      .medium,
+      .laptop,
+      .desktop,
+      .hd {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 770px) and (max-width: 1023px) {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .spiderman-image,
+      .spiderman-text {
+        width: 50%;
+      }
+
+      .random {
+        background-color: #ff33aa;
+        color: black;
+      }
+      .medium {
+        background-color: #1144fa;
+        color: wheat;
+      }
+
+      .mobile,
+      .tab,
+      .desktop,
+      .laptop,
+      .hd {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1219px) {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .spiderman-image,
+      .spiderman-text {
+        width: 50%;
+      }
+
+      .random {
+        background-color: #997568;
+        color: black;
+      }
+      .laptop {
+        background-color: #119956;
+        color: white;
+      }
+
+      .mobile,
+      .tab,
+      .medium,
+      .desktop,
+      .hd {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1220px) and (max-width: 1919px) {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .spiderman-image,
+      .spiderman-text {
+        width: 50%;
+      }
+      .spiderman-image {
+        height: 400px;
+      }
+      .spiderman-text {
+        font-size: 2rem;
+        height: 400px;
+        /* Vertical Scroll enables only when parent-height < content-height */
+        /* Horizontal Scroll enables only when parent-width < content-width */
+
+        /* To enable scroll X and Y axis */
+        /* overflow: auto;  */
+        /* overflow: scroll;  */
+        overflow: overlay;
+
+        /* To trim extras on X and Y axis going out to the parent  */
+        /* overflow: clip; */
+
+        /* To hide extras on X and Y axis going out to the parent  */
+        /* overflow: hidden; */
+      }
+
+      .spider-2 {
+        width: 50%;
+        height: 300px;
+        /* Vertical Scroll enables only when parent-height < content-height */
+        /* Horizontal Scroll enables only when parent-width < content-width */
+
+        /* To enable scroll X  */
+        /* overflow-x: auto;  */
+        /* overflow-x: scroll;  */
+        /* overflow-x: overlay;  */
+
+        /* To trim extras on X  axis going out to the parent  */
+        /* overflow-x: clip; */
+
+        /* To hide extras on X  axis going out to the parent  */
+        /* overflow-x: hidden; */
+
+        /* To enable scroll Y axis */
+        /* overflow-y: auto;  */
+        /* overflow-y: scroll;  */
+        /* overflow-y: overlay;  */
+
+        /* To trim extras on Y axis going out to the parent  */
+        /* overflow-y: clip; */
+
+        /* To hide extras on Y axis going out to the parent  */
+        /* overflow-y: hidden; */
+
+        /* to enable y axis scroll use */
+        /* overflow-x: hidden;
+        overflow-y: scroll; */
+
+        /* to enable x axis scroll use */
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+
+      .spider-2 > img {
+        width: 150%;
+        height: 600px;
+      }
+
+      /* overflow-wrap: is used to wrap the text of any paragraph */
+      /* when to use: length of word > width of p, div */
+      .overflowText {
+        width: 30%;
+        background-color: #99cdfa;
+        font-size: 2rem;
+
+        /* overflow-wrap:normal, this is default property */
+        /* overflow-wrap: normal; */
+
+        /* overflow-wrap:break-word, this is used to break word and moved to next line */
+        /* overflow-wrap: break-word; */
+
+        /* overflow-wrap:anywhere, this is used to break word and moved to next line */
+        overflow-wrap: anywhere;
+      }
+
+      .text-overflow-prop {
+        background-color: #1144fa;
+        color: #99cdfa;
+        width: 30%;
+        font-size: 2rem;
+        border: 2px solid black;
+
+        text-overflow: clip;
+      }
+
+      .random {
+        background-color: #99cdfa;
+        color: black;
+      }
+      .desktop {
+        background-color: #ccbb00;
+        color: white;
+      }
+
+      .mobile,
+      .tab,
+      .medium,
+      .laptop,
+      .hd {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1920px) {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .spiderman-image,
+      .spiderman-text {
+        width: 50%;
+      }
+
+      .spiderman-text {
+        font-size: 4rem;
+      }
+
+      .random {
+        background-color: #99bb68;
+        color: black;
+      }
+      .hd {
+        background-color: #110056;
+        color: white;
+      }
+
+      .mobile,
+      .tab,
+      .medium,
+      .desktop,
+      .laptop {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/576/838/565/spiderman-4k-artwork-hd-wallpaper-preview.jpg"
+        alt="spiderman"
+        class="spiderman-image"
+      />
+      <p class="spiderman-text">
+        <a
+          href="https://en.wikipedia.org/wiki/Spider-Man"
+          target="_blank"
+          class="superhero-spiderman"
+          >Spider-Man
+        </a>
+        is a
+        <a
+          href="https://www.wallpaperflare.com/spiderman-4k-artwork-hd-artist-behance-superheroes-digital-art-wallpaper-bdqxt"
+          target="_self"
+          class="superhero"
+          >superhero</a
+        >
+        appearing in American comic books published by Marvel Comics. Created by
+        writer-editor Stan Lee and artist Steve Ditko, he first appeared in the
+        anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age
+        of Comic Books. He has since been featured in films, television shows,
+        video games, and plays. Spider-Man is the alias of Peter Parker, an
+        orphan raised by his Aunt May and Uncle Ben in New York City after his
+        parents Richard and Mary Parker died in a plane crash. Lee and Ditko had
+        the character deal with the struggles of adolescence and financial
+        issues and gave him many supporting characters, such as Flash Thompson,
+        J. Jonah Jameson, and Harry Osborn; romantic interests Gwen Stacy, Mary
+        Jane Watson, and the Black Cat; and foes such as Doctor Octopus, the
+        Green Goblin, and Venom. In his origin story, he gets spider-related
+        abilities from a bite from a radioactive spider; these include clinging
+        to surfaces, superhuman strength and agility, and detecting danger with
+        his "spider-sense." He also builds wrist-mounted "web-shooter" devices
+        that shoot artificial spider webs of his own design.
+      </p>
+    </div>
+    <h1 class="random">Some random Text</h1>
+    <h1 class="mobile">small devices and Mobile devices</h1>
+    <h1 class="tab">iPads, Tablets</h1>
+    <h1 class="medium">Medium screens</h1>
+    <h1 class="laptop">Laptop screens more than 20"</h1>
+    <h1 class="desktop">Desktops, large screens</h1>
+    <h1 class="hd">HD Televisions</h1>
+    <div class="spider-2">
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/275/883/590/spiderman-ps4-spiderman-ps4-games-hd-wallpaper-preview.jpg"
+        alt="spidey"
+      />
+    </div>
+    <p class="overflowText">
+      OVerflow-wrap Property surfaces, superhuman strength and
+      agilityagilityagilityagilityagilityagilityagilityagilityagility, and
+      detectingsurfaces, superhuman strength
+      Pneumonoultramicroscopicsilicovolcanoconiosis and agility, and
+      detectingsurfaces, superhuman strength and agility, and detectingsurfaces,
+      superhuman strength and agility, and detectingsurfaces, superhuman
+      strength and agility, and detecting
+    </p>
+
+    <p class="text-overflow-prop">
+      texet-Overflow: Property surfaces, superhuman strength and
+      agilityagilityagilityagilityagilityagilityagilityagilityagility, and
+      detectingsurfaces, superhuman strength
+      Pneumonoultramicroscopicsilicovolcanoconiosis and agility, and
+      detectingsurfaces, superhuman strength and agility, and detectingsurfaces,
+      superhuman strength and agility, and detectingsurfaces, superhuman
+      strength and agility, and detecting
+    </p>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Display Properties</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .div1,
+    .div2,
+    .div3 {
+      width: 210px;
+      height: 150px;
+      border: 1px solid red;
+      margin: 5% auto;
+      font-size: 1rem;
+    }
+    audio {
+      width: 100%;
+      height: 26px;
+      margin-top: 2%;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="div1">
+        <!-- Audio
+        1. use audio tag
+        2. use source tag inside audio tag
+        3. use controls attribute in <audio>
+        4. use src to select audio file
+        5. provide type to define type of file type : type="audio/mp3"
+        6. autoplay: it plays the audio automatically
+        7. muted: it mutes the audio
+        8. loop: it plays the audio in loop(continuously)
+        -->
+        <audio controls autoplay muted>
+          <source src="my-song.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls loop preload="metadata">
+          <source src="horse.ogv" type="audio/ogg" />
+        </audio>
+        <p>Enjoy the audio</p>
+      </div>
+
+      <div class="div2">
+        <!-- Video
+        1. use video tag
+        2. use source tag inside video tag
+        3. use controls attribute in <video>
+        4. use src to select video file
+        5. provide type to define type of file type : type="video/mp3"
+        6. autoplay: it plays the video automatically
+        7. muted: it mutes the video
+        8. loop: it plays the video in loop(continuously)
+        9. use width to define width of video
+        10. use height to define height of video  
+
+      -->
+        <video controls width="100%" autoplay loop muted>
+          <source src="add_your_video_ here.mp4" type="video/mp4" />
+          <small>Add your video path</small>
+        </video>
+        <p>Eagle Corporation</p>
+      </div>
+      <div class="div3">
+        <iframe
+          src="https://www.w3schools.com"
+          title="youtube"
+          height="150px"
+          width="200px"
+          frameborder="0"
+          loading="lazy"
+          name="iframe"
+        ></iframe>
+        <p>EY Inter nation</p>
+      </div>
+    </div>
+  </body>
+</html>
