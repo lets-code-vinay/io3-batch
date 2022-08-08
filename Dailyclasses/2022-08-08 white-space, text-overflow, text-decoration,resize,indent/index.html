@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS properties</title>
+  </head>
+  <style>
+    /* Today's Topic covered */
+    /* 
+    1. Revision: overflow
+    2. text-overflow
+    3. pre tag
+    4. white-space
+    5. text-indent
+    6. resize
+    7. text-transform
+    8. text-decoration */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 50%;
+      background-color: blanchedalmond;
+    }
+
+    .p-tag {
+      border: 1px solid grey;
+      margin-top: 2%;
+    }
+
+    .p-tag {
+      /*It won't change anything it is a default property*/
+      /* white-space: normal; */
+
+      /* It will enter to new line where we applied enter/new line in the text */
+      /* white-space: break-spaces; */
+
+      /* It behaves just like <pre> tag */
+      /* white-space: pre; */
+
+      /* It adjusts the words till the end of the parent */
+      /* white-space: pre-wrap; */
+
+      /* It makes a single line of entire paragraph and doesn't care if it is exceeding the parent's width */
+      white-space: nowrap;
+    }
+
+    .h3-tag {
+      /* It makes all the words to lowercase or in small-letters */
+      /* text-transform: lowercase; */
+
+      /* It makes all the words to uppercase or in capital-letters */
+      /* text-transform: uppercase; */
+
+      /* It makes first letter/character to capital/uppercase of all the words */
+      text-transform: capitalize;
+    }
+
+    .p-indent {
+      height: 100px;
+      background-color: hotpink;
+      color: brown;
+      /* Text-indent is use to make space before the paragraph it can be used in %age or in pixel */
+      text-indent: 20px;
+
+      /* To Resize any div/p use resize: ; and overflow: auto; properties */
+      overflow: auto;
+
+      /* We can stretch any div or component to x-axis or in y-axis  */
+      /* resize: both; */
+
+      /* We can stretch any div or component to x-axis  */
+      resize: horizontal;
+
+      /* We can stretch any div or component to y-axis  */
+      resize: vertical;
+    }
+
+    .decoration {
+      line-height: 30px;
+      /* To provide any line over/on the text use: */
+      /* text-decoration: overline; */
+
+      /* To provide any line under/below the text use: */
+      /* text-decoration: underline; */
+
+      /* To provide any line under/below and over/on the text use: */
+      /* text-decoration: underline overline; */
+
+      /* To provide strike-through line on the text use: */
+      /* text-decoration: line-through; */
+
+      /* To provide color on text-decoration: */
+      text-decoration-color: black;
+
+      text-decoration-line: underline;
+
+      /* TO USE TEXT-DECORATION STYLE YOU MUST HAVE USE TEXT-DECORATION OTHERWISE IT WON'T WORK */
+
+      /* It will make decoration-line to dashed  - - - -  */
+      text-decoration-style: dashed;
+
+      /* It will make decoration-line to dotted  .....  */
+      text-decoration-style: dotted;
+
+      /* It will make decoration-line to solid  ______  */
+      text-decoration-style: solid;
+
+      /* It will make decoration-line to wavy  ~~~~~~~~*/
+      text-decoration-style: wavy;
+
+      /* It will make decoration-line to double  ======== */
+      text-decoration-style: double;
+
+      /* It provides the height to the decoration line */
+      text-decoration-thickness: 1px;
+    }
+
+    .h3-tag {
+      /* text-decoration shorthand */
+      /* text-decoration: line style color thickness */
+      /* text-decoration: underline double yellowgreen 1px; */
+      text-decoration: underline wavy green 1px;
+    }
+
+    h4 {
+      /* text-shadow: 16px 11px 3px black; */
+
+      /* To provide Neon effect*/
+      text-shadow: 0px 0px 10px blue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p class="p-tag">
+        Peter Benjamin Parker is a former high school student who gained
+        spider-like abilities, fighting crime across New York City as the
+        superhero Spider-Man. While Parker juggled all his continued hero duties
+        with the demands of his high-school life, he was approached by Tony
+        Stark who recruited Spider-Man to join the Avengers Civil War, putting
+        Spider-Man into the brief conflict with his personal hero, Captain
+        America. Parker was given a new suit as well as new Stark technology in
+        exchange for his help, allowing him to return back home to continue his
+        own hero workworkworkworkworkworkworkworkworkworkworkworkworkworkwork.
+      </p>
+
+      <h3 class="h3-tag">Spider Man is a my favorite Superhero</h3>
+
+      <p class="p-indent decoration">
+        Peter Benjamin Parker is a former high school student who gained
+        spider-like abilities, fighting crime across New York City as the
+        superhero Spider-Man.
+      </p>
+      <p class="p-indent">
+        While Parker juggled all his continued hero duties with the demands of
+        his high-school life, he was approached by Tony Stark who recruited
+        Spider-Man to join the Avengers Civil War, putting Spider-Man into the
+        brief conflict with his personal hero, Captain America. Parker was given
+        a new suit as well as new Stark technology in exchange for his help,
+        allowing him to return back home to continue his own hero
+        workworkworkworkworkworkworkworkworkworkworkworkworkworkwork.
+      </p>
+
+      <h4>I am text-shadow</h4>
+    </div>
+  </body>
+</html>

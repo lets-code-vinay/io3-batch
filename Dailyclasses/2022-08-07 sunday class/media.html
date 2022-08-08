@@ -235,6 +235,13 @@ Media query for multiple screen
         overflow-wrap: anywhere;
       }
 
+      /*text-overflow property is used to hide/trim extra texts going out from the div or <p>*/
+      /* For this we have to use 2 more CSS properties 1. white-space: nowrap; overflow: hidden */
+      /* when we apply white-space:nowrap; it make entire paragraph into one line */
+      /* we can use text-overflow: clip --> It will trim excessive part/word going out from parent/div/p*/
+      /* we can use text-overflow: ellipsis --> It trims the excessive part/word
+        from parent/div/p but it show an indication with three dots(...) to
+        indicate user that there is more words */
       .text-overflow-prop {
         background-color: #1144fa;
         color: #99cdfa;
@@ -242,7 +249,10 @@ Media query for multiple screen
         font-size: 2rem;
         border: 2px solid black;
 
-        text-overflow: clip;
+        /* text-overflow: clip; */
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
       }
 
       .random {
@@ -358,7 +368,7 @@ Media query for multiple screen
     </p>
 
     <p class="text-overflow-prop">
-      texet-Overflow: Property surfaces, superhuman strength and
+      text-Overflow: Property surfaces, superhuman strength and
       agilityagilityagilityagilityagilityagilityagilityagilityagility, and
       detectingsurfaces, superhuman strength
       Pneumonoultramicroscopicsilicovolcanoconiosis and agility, and
