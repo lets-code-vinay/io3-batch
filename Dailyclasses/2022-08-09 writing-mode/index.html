@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-properties</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      background-color: aqua;
+    }
+    .writing-mode-class {
+      width: 50%;
+      overflow: hidden;
+      border: 1px solid green;
+      margin: auto;
+
+      /* Outline is used to provide extra lining or border after the border of any element */
+      /* Outline has same properties as border outline: thickness state color*/
+      outline: 6px solid yellow;
+
+      /* outline-offset: is used to provide gap between outline to element or element's border; */
+      outline-offset: 10px;
+    }
+    .writing-mode-text {
+      /* Writing mode used to rotate the text on right angle or on 90 degree */
+
+      /* writing-mode: horizontal-tb; is default state*/
+      /* writing-mode: horizontal-tb; */
+
+      /* writing-mode: vertical-rl; is used to rotate the text on 90 degree*/
+      writing-mode: vertical-rl;
+    }
+
+    #avengers-list {
+      border: 1px solid black;
+      height: 20px;
+      margin-top: 5%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p class="writing-mode-class">
+        While <span class="writing-mode-text"> Parker </span>juggled all his
+        continued hero duties with the demands of his high-school life, he was
+        approached by Tony Stark who recruited
+        <span class="writing-mode-text">Spider-Man</span> to join the Avengers
+        Civil War, putting Spider-Man into the brief conflict with his personal
+        hero, Captain America. Parker was given a new suit as well as new Stark
+        technology in exchange for his help, allowing him to return back home to
+        continue his own hero
+        workworkworkworkworkworkworkworkworkworkworkworkworkworkwork.
+      </p>
+    </div>
+    <select name="avengers" id="avengers">
+      <option value="spider-man">Spider-man</option>
+      <option value="iron-man">Iron-man</option>
+      <option value="ultron">Ultron</option>
+      <option value="black-widow">Black widow</option>
+    </select>
+
+    <input id="avengers-list" list="avengers-lists" name="avengers-assemble" />
+    <datalist id="avengers-lists">
+      <option value="spider-man"></option>
+      <option value="iron-man"></option>
+      <option value="ultron"></option>
+      <option value="black-widow"></option>
+      <option value="Thor"></option>
+      <option value="Hulk"></option>
+      <option value="Hawkeye"></option>
+      <option value="War-machine"></option>
+      <option value="black-panther"></option>
+      <option value="ant-man"></option>
+    </datalist>
+
+    <!-- <img
+      src="https://i.pinimg.com/originals/b0/0c/28/b00c283e4bfd8bb48d2ebc1179541f53.jpg"
+      alt="spider man"
+      class="spider-man"
+    /> -->
+  </body>
+</html>
