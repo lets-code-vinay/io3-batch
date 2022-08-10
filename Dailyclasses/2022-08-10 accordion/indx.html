@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-properties</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      background-color: bisque;
+    }
+    details {
+      background-color: brown;
+      color: aqua;
+      width: 20%;
+      margin: auto;
+      border: 1px solid grey;
+    }
+    summary {
+      background-color: blanchedalmond;
+      color: blue;
+    }
+    p {
+      color: cadetblue;
+    }
+    p > img {
+      float: left;
+      width: 100px;
+      height: 100px;
+    }
+
+    .link:link {
+      color: black;
+      border: 1px solid yellow;
+    }
+
+    .visited:visited {
+      color: yellow;
+      border: 1px dashed black;
+    }
+
+    .active:active {
+      color: blue;
+      background-color: aquamarine;
+      border: 1px solid yellow;
+      border-radius: 5px;
+    }
+
+    .Hover:hover {
+      color: pink;
+      border: 1px solid red;
+      background-color: black;
+    }
+
+    .visited-2 {
+      color: red;
+      background-color: yellow;
+      border: 1px solid blue;
+    }
+    .visited-2:visited {
+      color: red;
+      background-color: greenyellow;
+      border: 1px solid blue;
+      border-radius: 10px !important;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Accordion: is a show/hide element which contains some data which is hidden
+        by default. When we click on it. Then it expands and collapse -->
+      <!-- details -->
+      <!-- summary -->
+      <!-- p -->
+      <details>
+        <summary>Spider Man</summary>
+        <p>
+          Fans know Spider-Man is strong, but Marvel confirms Peter Parker has
+          the strength to not only survive a Hulk attack, but take him down too
+        </p>
+      </details>
+
+      <details>
+        <summary>Iron Man</summary>
+        <p>
+          Fans know Spider-Man is strong, but Marvel confirms Peter Parker has
+          the strength to not only survive a Hulk attack, but take him down too
+        </p>
+      </details>
+
+      <details>
+        <summary>Bat Man</summary>
+        <p>
+          Fans know Spider-Man is strong, but Marvel confirms Peter Parker has
+          the strength to not only survive a Hulk attack, but take him down too
+        </p>
+      </details>
+
+      <!-- To use multiple images on same location and changes as per screen size -->
+
+      <!-- <picture></picture>
+        <source>
+            media: define screen width 
+            srcset: provide image with link or path
+        <img
+            src
+            alt
+            /> -->
+
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            https://c4.wallpaperflare.com/wallpaper/576/838/565/spiderman-4k-artwork-hd-wallpaper-preview.jpg
+          "
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="https://images3.alphacoders.com/986/thumbbig-986758.webp"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="https://images6.alphacoders.com/102/thumbbig-1020775.webp"
+        />
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/275/883/590/spiderman-ps4-spiderman-ps4-games-hd-wallpaper-preview.jpg"
+          alt="spider-man"
+        />
+      </picture>
+    </div>
+
+    <!-- -Pseudo classes -->
+    <a class="Hover" href="#">Hover</a>
+    <a class="link" href="#">link</a>
+    <a class="active" href="#">active</a>
+    <a class="visited" href="#">visited</a>
+    <a class="visited-2" href="#">Visited-2</a>
+  </body>
+</html>
