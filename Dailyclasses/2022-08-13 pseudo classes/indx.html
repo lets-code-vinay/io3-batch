@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-properties</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: beige;
+    }
+
+    .container p:first-child {
+      background-color: blue;
+      font-weight: 600;
+      text-indent: 20px;
+      color: wheat;
+    }
+
+    div p:last-child {
+      background-color: red;
+      text-indent: 20px;
+    }
+
+    div p:nth-child(4) {
+      background-color: yellow;
+      text-indent: 10%;
+    }
+
+    .input-tag {
+      background-color: rgb(180, 121, 121);
+      color: blue;
+      border: 1px solid red;
+    }
+
+    .input-tag:focus {
+      background-color: rgb(133, 47, 47);
+      color: rgb(132, 5, 5);
+      border: 2px solid yellow !important;
+      border-radius: 0px !important;
+      outline: none;
+    }
+
+    /* Pseudo elements */
+    .container-2 p::first-letter {
+      background-color: blue;
+      color: white;
+      font-size: xx-large;
+    }
+    ul {
+      margin-left: 10%;
+    }
+
+    /*
+     ::marker is used to change or manipulate li bullets
+     */
+    /* ul li::marker {
+       color: red;
+       font-size: x-large;
+     } */
+
+    ul li {
+      list-style-type: none;
+    }
+    /* How to add external character or symbol in any list */
+    ul li::before {
+      content: "✝ ";
+      color: red;
+      font-size: x-large;
+    }
+
+    /* How to add external image in any list */
+    ul.with-emoji li::before {
+      content: url(./emo.png);
+      color: red;
+      font-size: x-large;
+    }
+
+    /* How to add external image in any list */
+    ul.with-emoji li::before {
+      content: url(./emo.png);
+      color: red;
+      font-size: x-large;
+    }
+
+    /* How to add external image in any list */
+    ul.with-emoji-after li::after {
+      content: url(./emo.png);
+      color: red;
+      font-size: x-large;
+    }
+
+    .after-before::before {
+      content: "This is at before ";
+      color: red;
+      font-size: x-small;
+    }
+
+    .after-before::after {
+      content: "This is at after ";
+      color: blue;
+      font-size: x-small;
+    }
+
+    .style-header {
+      color: brown;
+      position: relative;
+      margin: 20%;
+    }
+
+    .style-header::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      top: -4%;
+      background-image: linear-gradient(45deg, black, transparent);
+      border-radius: 4px;
+    }
+
+    .style-header::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background-image: linear-gradient(273deg, black, transparent);
+      border-radius: 4px;
+      bottom: -18%;
+      left: 0;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Thor</li>
+      <li>Hulk</li>
+      <li>Antman</li>
+    </ul>
+
+    <ul class="with-emoji">
+      <li>Thor</li>
+      <li>Hulk</li>
+      <li>Antman</li>
+    </ul>
+
+    <ul class="with-emoji-after">
+      <li>Thor-after</li>
+      <li>Hulk</li>
+      <li>Antman</li>
+    </ul>
+
+    <h2 class="after-before">After-Before</h2>
+
+    <h2 class="style-header">Welcome to Infoxygen</h2>
+
+    <div class="container">
+      <p>
+        Yes! All of the random paragraphs in our generator are free to use for
+        your projects.
+      </p>
+      <p>
+        Yes. We're always interested in improving this generator and one of the
+        best ways to do that is to add new and interesting paragraphs to the
+        generator. If you'd like to contribute some random paragraphs, please
+        contact us.
+      </p>
+      <p>
+        Generating random paragraphs can be an excellent way for writers to get
+        their creative flow going at the beginning of the day. The writer has no
+        idea what topic the random paragraph will be about when it appears. This
+        forces the writer to use creativity to complete one of three common
+        writing challenges. The writer can use the paragraph as the first one of
+        a short story and build upon it. A second option is to use the random
+        paragraph somewhere in a short story they create. The third option is to
+        have the random paragraph be the ending paragraph in a short story. No
+        matter which of these challenges is undertaken, the writer is forced to
+        use creativity to incorporate the paragraph into their writing.
+      </p>
+
+      <p>
+        A random paragraph can also be an excellent way for a writer to tackle
+        writers' block. Writing block can often happen due to being stuck with a
+        current project that the writer is trying to complete. By inserting a
+        completely random paragraph from which to begin, it can take down some
+        of the issues that may have been causing the writers' block in the first
+        place.
+      </p>
+
+      <p>
+        Another productive way to use this tool to begin a daily writing
+        routine. One way is to generate a random paragraph with the intention to
+        try to rewrite it while still keeping the original meaning. The purpose
+        here is to just get the writing started so that when the writer goes
+        onto their day's writing projects, words are already flowing from their
+        fingers.
+      </p>
+    </div>
+    <input
+      type="text"
+      placeholder="Enter Anything you like"
+      class="input-tag"
+    />
+
+    <div class="container-2">
+      <p>
+        Yes! All of the random paragraphs in our generator are free to use for
+        your projects.
+      </p>
+      <p>
+        Yes. We're always interested in improving this generator and one of the
+        best ways to do that is to add new and interesting paragraphs to the
+        generator. If you'd like to contribute some random paragraphs, please
+        contact us.
+      </p>
+      <p>
+        Generating random paragraphs can be an excellent way for writers to get
+        their creative flow going at the beginning of the day. The writer has no
+        idea what topic the random paragraph will be about when it appears. This
+        forces the writer to use creativity to complete one of three common
+        writing challenges. The writer can use the paragraph as the first one of
+        a short story and build upon it. A second option is to use the random
+        paragraph somewhere in a short story they create. The third option is to
+        have the random paragraph be the ending paragraph in a short story. No
+        matter which of these challenges is undertaken, the writer is forced to
+        use creativity to incorporate the paragraph into their writing.
+      </p>
+
+      <p>
+        A random paragraph can also be an excellent way for a writer to tackle
+        writers' block. Writing block can often happen due to being stuck with a
+        current project that the writer is trying to complete. By inserting a
+        completely random paragraph from which to begin, it can take down some
+        of the issues that may have been causing the writers' block in the first
+        place.
+      </p>
+
+      <p>
+        Another productive way to use this tool to begin a daily writing
+        routine. One way is to generate a random paragraph with the intention to
+        try to rewrite it while still keeping the original meaning. The purpose
+        here is to just get the writing started so that when the writer goes
+        onto their day's writing projects, words are already flowing from their
+        fingers.
+      </p>
+    </div>
+  </body>
+</html>
