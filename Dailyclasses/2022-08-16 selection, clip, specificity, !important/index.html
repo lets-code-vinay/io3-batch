@@ -4,9 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Css-properties</title>
   </head>
-  <body></body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* To use globally use it without any element, class or id */
+    ::selection {
+      background-color: black;
+      color: red;
+    }
+    .selection-div {
+      background-color: red;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    /* ::selection is used to provide extra properties when user selects any paragraph or text */
+    .selection-div span::selection {
+      background-color: yellow;
+      color: blue;
+    }
+
+    /* ----Specificity ---- */
+    /* Properties given with id has more priority */
+    p {
+      /* background-color: red; */
+      color: white;
+    }
+    #id-name {
+      background-color: grey;
+      color: yellow;
+    }
+
+    /* !important is used to apply css-properties in force */
+    .class-any {
+      background-color: brown !important;
+      color: white !important;
+    }
+    .class-name {
+      background-color: blue;
+      color: white;
+    }
+
+    .multi-shadow {
+      text-shadow: 0px 0px 2px black, 1px 1px 1px blue, -1px -1px 1px red,
+        1px -1px 1px purple, -1px 1px 1px yellow;
+    }
+
+    body {
+      position: relative;
+    }
+
+    img {
+      margin: 2% auto 10%;
+      position: absolute;
+      /* to crop image in rectangle mode       */
+      /* clip: rect(20px, 250px, 150px, 100px); */
+
+      /* To make any div or image in triangle shape */
+      /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+
+      /* To make any div or image in diamond shape */
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+      /* To make any div or image in pentagon shape */
+      clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+      /* To make any div or image in pentagon shape */
+      clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+    }
+  </style>
+  <body>
+    <div class="selection-div">
+      <span>
+        A random paragraph can also be an excellent way for a writer to tackle
+        writers' block. Writing block can often happen due to being stuck with a
+        current project that the writer is trying to complete. By inserting a
+        completely random paragraph from which to begin, it can take down some
+        of the issues that may have been causing the writers' block in the first
+        place.
+      </span>
+    </div>
+
+    <p class="multi-shadow">
+      multi-shadow A random paragraph can also be an excellent way for a writer
+      to tackle writers' block.
+    </p>
+
+    <p class="class-name class-any" id="id-name">
+      A random paragraph can also be an excellent way for a writer to tackle
+      writers' block.
+    </p>
+    <img
+      src="http://m.gettywallpapers.com/wp-content/uploads/2020/05/Captain-America-Wallpaper-For-PC-1024x576.jpg"
+      alt="captain-america"
+      height="200px"
+      width="300px"
+    />
+  </body>
 </html>
 
 <!-- Extension -> setting Icon -> Settings -> type FORM -> 1.Default formatter change
