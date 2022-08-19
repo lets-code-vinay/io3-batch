@@ -13,78 +13,394 @@
       box-sizing: border-box;
     }
 
-    .container {
-      background-color: black;
-      padding: 2px;
-      display: grid;
-      /* grid-template-columns: 160px 160px 160px; */
-      /* grid-template-columns: 33% 33% 33%; */
-      /* grid-template-columns: 1fr 1fr 1fr; -- This is right*/
-      /* grid-template-columns: repeat(3, 1fr); */
-      /* grid-template-columns: 1fr 1fr 2fr 1fr; */
-      grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+    @media screen and (max-width: 480px) {
+      .container {
+        background-color: black;
+        padding: 2px;
+        display: grid;
+        /* grid-template-columns: 160px 160px 160px; */
+        /* grid-template-columns: 33% 33% 33%; */
+        /* grid-template-columns: 1fr 1fr 1fr; -- This is right*/
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+        grid-template-columns: repeat(2, 1fr) 2fr 1fr;
 
-      /* grid-template-rows: 50px 50px 50px; */
-      /* grid-template-rows: repeat(3, 50px); */
-      /* grid-template-rows: 1fr 1fr 1fr; */
-      /* grid-template-rows: repeat(3, 1fr); */
-      /* grid-template-rows: 2fr 2fr 1fr; */
-      grid-template-rows: 1fr 2fr 4fr 1fr 3fr;
+        /* grid-template-rows: 50px 50px 50px; */
+        /* grid-template-rows: repeat(3, 50px); */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: 2fr 2fr 1fr; */
+        grid-template-rows: 2fr 4fr 6fr 6fr 15fr 3fr;
 
-      /* Grid gap will provide gap in all columns and rows */
-      /* grid-gap: 3px; */
+        /* Grid gap will provide gap in all columns and rows */
+        /* grid-gap: 3px; */
 
-      /* Row gap will provide gap only in between two rows */
-      row-gap: 1px;
+        /* Row gap will provide gap only in between two rows */
+        row-gap: 5px;
 
-      /* column-gap will provide gap only in between two columns */
-      column-gap: 1px;
+        /* column-gap will provide gap only in between two columns */
+        column-gap: 1px;
+      }
+      .child-1 {
+        background-color: lawngreen;
+        border-radius: 2px;
+        height: 5vh;
+
+        /* grid-column-start: is used to define from where our column is starting; */
+        /* grid-column-start: 1; */
+
+        /* grid-column-end: is used to define from where our column is ending; */
+        /* grid-column-end: 3; */
+
+        /* grid-column: is short-hand of grid-column-start and grid-column-end; */
+        /* grid-column: 1/5; */
+
+        /* To cover entire width of any colum use grid-column-end: -1 */
+        grid-column: 1/-1;
+      }
+      .child-2 {
+        background-color: violet;
+        border-radius: 2px;
+
+        grid-row: 2/3;
+        grid-column: 1/-1;
+      }
+      .child-3 {
+        background-color: sienna;
+        border-radius: 2px;
+
+        grid-row: 3/4;
+        grid-column: 1/-1;
+      }
+      .child-4 {
+        background-color: wheat;
+        border-radius: 2px;
+
+        grid-row: 4/5;
+        grid-column: 1/-1;
+      }
+
+      .child-6 {
+        background-color: gold;
+        border-radius: 2px;
+        /* grid-column: 2/-1;
+        grid-row: 3/5; */
+
+        grid-row: 5/8;
+        grid-column: 1/-1;
+      }
+      .child-7 {
+        background-color: firebrick;
+        border-radius: 2px;
+        /* grid-column: 1/-1; */
+        grid-row: 9/9;
+        grid-column: 1/-1;
+        height: 5vh;
+      }
     }
-    .child-1 {
-      background-color: lawngreen;
-      border-radius: 2px;
 
-      /* grid-column-start: is used to define from where our column is starting; */
-      /* grid-column-start: 1; */
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      .container {
+        background-color: black;
+        padding: 2px;
+        display: grid;
+        /* grid-template-columns: 160px 160px 160px; */
+        /* grid-template-columns: 33% 33% 33%; */
+        /* grid-template-columns: 1fr 1fr 1fr; -- This is right*/
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+        grid-template-columns: repeat(2, 1fr) 2fr 1fr;
 
-      /* grid-column-end: is used to define from where our column is ending; */
-      /* grid-column-end: 3; */
+        /* grid-template-rows: 50px 50px 50px; */
+        /* grid-template-rows: repeat(3, 50px); */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: 2fr 2fr 1fr; */
+        grid-template-rows: 1fr 2fr 4fr 1fr 3fr;
 
-      /* grid-column: is short-hand of grid-column-start and grid-column-end; */
-      /* grid-column: 1/5; */
+        /* Grid gap will provide gap in all columns and rows */
+        /* grid-gap: 3px; */
 
-      /* To cover entire width of any colum use grid-column-end: -1 */
-      grid-column: 1/-1;
-    }
-    .child-2 {
-      background-color: violet;
-      border-radius: 2px;
+        /* Row gap will provide gap only in between two rows */
+        row-gap: 1px;
 
-      grid-row: 2/5;
+        /* column-gap will provide gap only in between two columns */
+        column-gap: 1px;
+      }
+      .child-1 {
+        background-color: lawngreen;
+        border-radius: 2px;
+
+        /* grid-column-start: is used to define from where our column is starting; */
+        /* grid-column-start: 1; */
+
+        /* grid-column-end: is used to define from where our column is ending; */
+        /* grid-column-end: 3; */
+
+        /* grid-column: is short-hand of grid-column-start and grid-column-end; */
+        /* grid-column: 1/5; */
+
+        /* To cover entire width of any colum use grid-column-end: -1 */
+        grid-column: 1/-1;
+      }
+      .child-2 {
+        background-color: violet;
+        border-radius: 2px;
+
+        grid-row: 2/5;
+      }
+      .child-3 {
+        background-color: sienna;
+        border-radius: 2px;
+        grid-column: 2/4;
+      }
+      .child-4 {
+        background-color: wheat;
+        border-radius: 2px;
+      }
+      .child-5 {
+        background-color: turquoise;
+        border-radius: 2px;
+      }
+      .child-6 {
+        background-color: gold;
+        border-radius: 2px;
+        grid-column: 2/-1;
+        grid-row: 3/5;
+      }
+      .child-7 {
+        background-color: firebrick;
+        border-radius: 2px;
+        grid-column: 1/-1;
+      }
     }
-    .child-3 {
-      background-color: sienna;
-      border-radius: 2px;
-      grid-column: 2/4;
+
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      .container {
+        background-color: black;
+        padding: 2px;
+        display: grid;
+        /* grid-template-columns: 160px 160px 160px; */
+        /* grid-template-columns: 33% 33% 33%; */
+        /* grid-template-columns: 1fr 1fr 1fr; -- This is right*/
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+        grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+
+        /* grid-template-rows: 50px 50px 50px; */
+        /* grid-template-rows: repeat(3, 50px); */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: 2fr 2fr 1fr; */
+        grid-template-rows: 1fr 2fr 4fr 1fr 3fr;
+
+        /* Grid gap will provide gap in all columns and rows */
+        /* grid-gap: 3px; */
+
+        /* Row gap will provide gap only in between two rows */
+        row-gap: 1px;
+
+        /* column-gap will provide gap only in between two columns */
+        column-gap: 1px;
+      }
+      .child-1 {
+        background-color: lawngreen;
+        border-radius: 2px;
+
+        /* grid-column-start: is used to define from where our column is starting; */
+        /* grid-column-start: 1; */
+
+        /* grid-column-end: is used to define from where our column is ending; */
+        /* grid-column-end: 3; */
+
+        /* grid-column: is short-hand of grid-column-start and grid-column-end; */
+        /* grid-column: 1/5; */
+
+        /* To cover entire width of any colum use grid-column-end: -1 */
+        grid-column: 1/-1;
+      }
+      .child-2 {
+        background-color: violet;
+        border-radius: 2px;
+
+        grid-row: 2/5;
+      }
+      .child-3 {
+        background-color: sienna;
+        border-radius: 2px;
+        grid-column: 2/4;
+      }
+      .child-4 {
+        background-color: wheat;
+        border-radius: 2px;
+      }
+      .child-5 {
+        background-color: turquoise;
+        border-radius: 2px;
+      }
+      .child-6 {
+        background-color: gold;
+        border-radius: 2px;
+        grid-column: 2/-1;
+        grid-row: 3/5;
+      }
+      .child-7 {
+        background-color: firebrick;
+        border-radius: 2px;
+        grid-column: 1/-1;
+      }
     }
-    .child-4 {
-      background-color: wheat;
-      border-radius: 2px;
+
+    @media screen and (min-width: 1280px) and (max-width: 1920px) {
+      .container {
+        background-color: black;
+        padding: 2px;
+        display: grid;
+        /* grid-template-columns: 160px 160px 160px; */
+        /* grid-template-columns: 33% 33% 33%; */
+        /* grid-template-columns: 1fr 1fr 1fr; -- This is right*/
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+        grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+
+        /* grid-template-rows: 50px 50px 50px; */
+        /* grid-template-rows: repeat(3, 50px); */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: 2fr 2fr 1fr; */
+        grid-template-rows: 1fr 2fr 4fr 1fr 3fr;
+
+        /* Grid gap will provide gap in all columns and rows */
+        /* grid-gap: 3px; */
+
+        /* Row gap will provide gap only in between two rows */
+        row-gap: 1px;
+
+        /* column-gap will provide gap only in between two columns */
+        column-gap: 1px;
+      }
+      .child-1 {
+        background-color: lawngreen;
+        border-radius: 2px;
+
+        /* grid-column-start: is used to define from where our column is starting; */
+        /* grid-column-start: 1; */
+
+        /* grid-column-end: is used to define from where our column is ending; */
+        /* grid-column-end: 3; */
+
+        /* grid-column: is short-hand of grid-column-start and grid-column-end; */
+        /* grid-column: 1/5; */
+
+        /* To cover entire width of any colum use grid-column-end: -1 */
+        grid-column: 1/-1;
+      }
+      .child-2 {
+        background-color: violet;
+        border-radius: 2px;
+
+        grid-row: 2/5;
+      }
+      .child-3 {
+        background-color: sienna;
+        border-radius: 2px;
+        grid-column: 2/4;
+      }
+      .child-4 {
+        background-color: wheat;
+        border-radius: 2px;
+      }
+      .child-5 {
+        background-color: turquoise;
+        border-radius: 2px;
+      }
+      .child-6 {
+        background-color: gold;
+        border-radius: 2px;
+        grid-column: 2/-1;
+        grid-row: 3/5;
+      }
+      .child-7 {
+        background-color: firebrick;
+        border-radius: 2px;
+        grid-column: 1/-1;
+      }
     }
-    .child-5 {
-      background-color: turquoise;
-      border-radius: 2px;
-    }
-    .child-6 {
-      background-color: gold;
-      border-radius: 2px;
-      grid-column: 2/-1;
-      grid-row: 3/5;
-    }
-    .child-7 {
-      background-color: firebrick;
-      border-radius: 2px;
-      grid-column: 1/-1;
+
+    @media screen and (min-width: 1920px) {
+      .container {
+        background-color: black;
+        padding: 2px;
+        display: grid;
+        /* grid-template-columns: 160px 160px 160px; */
+        /* grid-template-columns: 33% 33% 33%; */
+        /* grid-template-columns: 1fr 1fr 1fr; -- This is right*/
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+        grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+
+        /* grid-template-rows: 50px 50px 50px; */
+        /* grid-template-rows: repeat(3, 50px); */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: 2fr 2fr 1fr; */
+        grid-template-rows: 1fr 2fr 4fr 1fr 3fr;
+
+        /* Grid gap will provide gap in all columns and rows */
+        /* grid-gap: 3px; */
+
+        /* Row gap will provide gap only in between two rows */
+        row-gap: 1px;
+
+        /* column-gap will provide gap only in between two columns */
+        column-gap: 1px;
+      }
+      .child-1 {
+        background-color: lawngreen;
+        border-radius: 2px;
+
+        /* grid-column-start: is used to define from where our column is starting; */
+        /* grid-column-start: 1; */
+
+        /* grid-column-end: is used to define from where our column is ending; */
+        /* grid-column-end: 3; */
+
+        /* grid-column: is short-hand of grid-column-start and grid-column-end; */
+        /* grid-column: 1/5; */
+
+        /* To cover entire width of any colum use grid-column-end: -1 */
+        grid-column: 1/-1;
+      }
+      .child-2 {
+        background-color: violet;
+        border-radius: 2px;
+
+        grid-row: 2/5;
+      }
+      .child-3 {
+        background-color: sienna;
+        border-radius: 2px;
+        grid-column: 2/4;
+      }
+      .child-4 {
+        background-color: wheat;
+        border-radius: 2px;
+      }
+      .child-5 {
+        background-color: turquoise;
+        border-radius: 2px;
+      }
+      .child-6 {
+        background-color: gold;
+        border-radius: 2px;
+        grid-column: 2/-1;
+        grid-row: 3/5;
+      }
+      .child-7 {
+        background-color: firebrick;
+        border-radius: 2px;
+        grid-column: 1/-1;
+      }
     }
   </style>
   <body>
