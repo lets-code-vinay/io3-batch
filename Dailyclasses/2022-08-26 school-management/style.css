@@ -148,3 +148,25 @@
   border-radius: 7px;
   font-weight: 400;
 }
+.section-5-col {
+  background-color: #f9fafb;
+}
+.section-5-col .row {
+  background-color: transparent;
+}
+.section-5-title-row {
+  position: sticky;
+  top: 1%;
+}
+.section-5-title-row .col-8 h1 {
+  font-weight: 800;
+}
+
+.section-5-row-2 {
+  /* used this to increase height */
+  /* height: 1500px; */
+}
+
+.carousel-indicators {
+  color: black;
+}
