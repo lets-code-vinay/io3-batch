@@ -48,6 +48,13 @@ Javascript runs on Browsers(Chrome, internet explorer, Mozilla Firefox, Safari)
 1. .js
 2. .jsx (ReactJS)
 
+### type of case styles
+
+1. Snake Case: this_is_snake_Case, THIS_IS_SNAKE_CASE
+2. Kebab Case: this-is-kebab-case, THIS-IS-KEBAB-CASE
+3. Pascal Case: ThisIsPascalCase,
+4. Camel Case: thisIsCamelCase,
+
 ### How to use Javascript
 
 1. Console tool of Browser -> F12/console-tab, right-click/inspect/console-tab
@@ -55,3 +62,13 @@ Javascript runs on Browsers(Chrome, internet explorer, Mozilla Firefox, Safari)
    a. https://jsbin.com/
    b. https://jsfiddle.net/
    c. replit
+3. How to use JS in local machine?
+   a. Internal javaScript
+   inside <script> tags
+   ## Header <Script>
+   ----CDN or Meta
+   ## Body <Script>
+   ---based on priority
+   ## End of Body <Script>
+   ---Widely used
+   b. External javaScript
