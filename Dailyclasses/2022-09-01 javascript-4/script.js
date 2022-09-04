@@ -225,3 +225,44 @@ console.log("output-7", 56 + 100 + "true"); // 156true
 console.log("output-8", 56 + 100 + Number("true")); // NaN
 console.log("output-9", 56 + 100 + Number("Vinay")); // Nan
 console.log("output-9", 50 - "100" + "Vinay"); // 50100Vinay,
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+const studentName = "Ankur Kumar";
+
+let mathMarks = 55;
+let EngMarks = 70;
+let scienceMarks = 35;
+let phyMarks = 87;
+let chemMarks = 70;
+
+console.log("-------------------2022-09-04 --> 1 -------------------------->");
+console.log(
+  `1. My name is ${studentName} Maurya. I got marks in math is ${mathMarks}, in science is ${scienceMarks} and in English is ${EngMarks}`
+);
+
+scienceMarks = 65;
+console.log(
+  `2. My name is ${studentName} Maurya. I got marks in math is ${mathMarks}, in science is ${scienceMarks} and in English is ${EngMarks}`
+);
+const obtainedMarks =
+  mathMarks + EngMarks + scienceMarks + phyMarks + chemMarks;
+const totalMarks = 500;
+const percentage = (obtainedMarks / totalMarks) * 100;
+
+console.log(
+  `3. ${studentName}'s obtained marks is ${obtainedMarks} out of ${totalMarks} and his percentage is ${percentage.toFixed(
+    1
+  )}%`
+);
