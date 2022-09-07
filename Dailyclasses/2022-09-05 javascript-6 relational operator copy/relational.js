@@ -44,7 +44,7 @@ console.log("20.---->", !false === false); // false
 
 console.log("------------- != and !== --------------");
 console.log("21. --->", 12 != "12"); // false
-console.log("22. --->", 12 !== "12"); // true
+console.log("22. --->", 12 !== "22"); // value == value  && number == string -- true && false -- false --> !false == true
 
 console.log("------------- (  >  )   greater than --------------");
 // left > right
