@@ -1,6 +1,6 @@
 ### 1. Check if input variable from keyboard is a number or not
 
-    --> Remember yesterday's lecture -- use isNaN()
+    --> Remember lecture -- use isNaN()
 
 ### 2. Write a function and pass two parameter to find the largest number.
 
@@ -20,3 +20,9 @@ and return accordingly
 
     ---> evaluateNumbers(number1, number2, operation)
     ---> Operation - add, subtract, multiply, division, modulus
+
+### 6. Write a function which calculates square and square-root of any number
+
+### 7. Write a function which calculates 4^7, 10^4, 12^3, 90^4
+
+### 8. Write a function to find the enter day of week and the enter month of year.
