@@ -31,14 +31,10 @@
     **wef = 35.74 + 0,6215t + ( 0.4275t - 35.75) \* v^0.16**
     _where t is the temperature and v is the wind velocity. Write a program to receive values of t and v and calculate wind chill factor(wef). _
 
-    8. If cost price and selling price of an item are input through the
-       keyboard, write a program to determine whether the seller has made profit or incurred loss. Also determine how much profit he
-       made or loss he incurred.
-
-8.  (b) Any integer is input through the keyboard. Write a program to find
+8.  Any integer is input through the keyboard. Write a program to find
     out whether it is an odd number or even number.
 
-9.  c) Any year is input through the keyboard. 'Write a program to
+9.  Any year is input through the keyboard. 'Write a program to
     determine whether the year is a leap year or not.
     (Hint: Use the % (modulus) operator)
 
@@ -82,3 +78,7 @@
     |          | <10                | Graduate         | 6000     |
 18. A five-digit number is entered through the keyboard. Write a
     program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not.
+
+19. If cost price and selling price of an item are input through the
+    keyboard, write a program to determine whether the seller has made profit or incurred loss. Also determine how much profit he
+    made or loss he incurred.
