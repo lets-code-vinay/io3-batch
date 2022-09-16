@@ -45,10 +45,6 @@
 10. _In a company an employee is paid as under:_
     If his basic salary is less than Rs. 1500, then HRA = 10% of basic salary and DA = 90% of basic salary. If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. If the employee's salary is input through the keyboard write a program to find his gross salary.
 
-        11.  (e) A five-digit number is entered through the keyboard. Write a
-
-    program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not.
-
 11. If the ages of Ram, Shyam and Ajay are input through the keyboard, write a program to determine the youngest of the three.
 
 12. Write a program to check whether a triangle is valid or not, when the three angles of the triangle are entered through the keyboard. A triangle is valid if the sum of all the three angles is equal to 180
@@ -84,3 +80,5 @@
     |          | >=10               | Graduate         | 9000     |
     |          | <10                | Post-Graduate    | 10000    |
     |          | <10                | Graduate         | 6000     |
+18. A five-digit number is entered through the keyboard. Write a
+    program to obtain the reversed number and to determine whether the original and reversed numbers are equal or not.
